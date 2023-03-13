@@ -97,17 +97,21 @@
             // 
             // textUsername
             // 
+            this.textUsername.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUsername.Location = new System.Drawing.Point(335, 144);
             this.textUsername.Name = "textUsername";
-            this.textUsername.Size = new System.Drawing.Size(215, 20);
+            this.textUsername.Size = new System.Drawing.Size(215, 25);
             this.textUsername.TabIndex = 9;
             // 
             // textPassword
             // 
+            this.textPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPassword.Location = new System.Drawing.Point(335, 195);
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '*';
-            this.textPassword.Size = new System.Drawing.Size(215, 20);
+            this.textPassword.Size = new System.Drawing.Size(215, 25);
             this.textPassword.TabIndex = 11;
             // 
             // label4
@@ -124,6 +128,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(332, 218);
@@ -137,6 +142,7 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.White;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Location = new System.Drawing.Point(475, 251);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);

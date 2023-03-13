@@ -18,7 +18,6 @@ namespace StudentApk
             InitializeComponent();
             this.user_active = user_active;
             this.Text = "Doctor Appointement - @" +user_active;
-            textAciveUserName.Text = "@" + user_active;
             customizeDesign();
         }
         private void customizeDesign()
@@ -61,7 +60,81 @@ namespace StudentApk
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Are you sure to exit?", "Exit", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            if(result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnMedia_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelDoctors);
+        }
+
+        private void btnActiveDoctors_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnDoctors2_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnDoctors4_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnPatients_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelPatients);
+        }
+
+        private void btnPatients1_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnPatients2_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnPatients3_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnPatients4_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelSettings);
+        }
+
+        private void btnSettings1_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnSettings2_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnSettings2_Click_1(object sender, EventArgs e)
+        {
+            hideSubMenu();
         }
     }
 }

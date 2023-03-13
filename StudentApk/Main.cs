@@ -19,10 +19,40 @@ namespace StudentApk
             this.user_active = user_active;
             this.Text = "Doctor Appointement - @" +user_active;
             textAciveUserName.Text = "@" + user_active;
+            customizeDesign();
         }
-        public void customizeDesign()
+        private void customizeDesign()
         {
-            panMediaSubMenu.Visible = false;
+            panelDoctors.Visible = false;
+            panelPatients.Visible = false;
+            panelSettings.Visible = false;
+        }
+        private void hideSubMenu()
+        {
+            if(panelDoctors.Visible == true)
+            {
+                panelDoctors.Visible = false;
+            }
+            if (panelPatients.Visible == true)
+            {
+                panelPatients.Visible = false;
+            }
+            if (panelSettings.Visible == true)
+            {
+                panelSettings.Visible = false;
+            }
+        }
+        private void showSubMenu(Panel panel)
+        {
+            if(panel.Visible == false)
+            {
+                hideSubMenu();
+                panel.Visible = true;
+            }
+            else
+            {
+                panel.Visible = false;
+            }
         }
         private void Main_Load(object sender, EventArgs e)
         {

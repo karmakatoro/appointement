@@ -34,12 +34,12 @@
             this.panLogo = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnMedia = new System.Windows.Forms.Button();
-            this.panMediaSubMenu = new System.Windows.Forms.Panel();
+            this.panelDoctors = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnDoctors = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelPatients = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@
             this.btnSettings = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelSettings = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.picBtnLogOut = new System.Windows.Forms.PictureBox();
@@ -57,9 +57,9 @@
             this.panSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.panLogo.SuspendLayout();
-            this.panMediaSubMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelDoctors.SuspendLayout();
+            this.panelPatients.SuspendLayout();
+            this.panelSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnAccount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnHelp)).BeginInit();
@@ -71,11 +71,11 @@
             this.panSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
             this.panSideMenu.Controls.Add(this.picBtnHelp);
             this.panSideMenu.Controls.Add(this.picBtnLogOut);
-            this.panSideMenu.Controls.Add(this.panel2);
+            this.panSideMenu.Controls.Add(this.panelSettings);
             this.panSideMenu.Controls.Add(this.btnSettings);
-            this.panSideMenu.Controls.Add(this.panel1);
+            this.panSideMenu.Controls.Add(this.panelPatients);
             this.panSideMenu.Controls.Add(this.btnDoctors);
-            this.panSideMenu.Controls.Add(this.panMediaSubMenu);
+            this.panSideMenu.Controls.Add(this.panelDoctors);
             this.panSideMenu.Controls.Add(this.btnMedia);
             this.panSideMenu.Controls.Add(this.panLogo);
             this.panSideMenu.Controls.Add(this.btnExit);
@@ -142,18 +142,18 @@
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedia.UseVisualStyleBackColor = true;
             // 
-            // panMediaSubMenu
+            // panelDoctors
             // 
-            this.panMediaSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(129)))), ((int)(((byte)(174)))));
-            this.panMediaSubMenu.Controls.Add(this.button5);
-            this.panMediaSubMenu.Controls.Add(this.button4);
-            this.panMediaSubMenu.Controls.Add(this.button3);
-            this.panMediaSubMenu.Controls.Add(this.button1);
-            this.panMediaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panMediaSubMenu.Location = new System.Drawing.Point(0, 108);
-            this.panMediaSubMenu.Name = "panMediaSubMenu";
-            this.panMediaSubMenu.Size = new System.Drawing.Size(200, 150);
-            this.panMediaSubMenu.TabIndex = 1;
+            this.panelDoctors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(129)))), ((int)(((byte)(174)))));
+            this.panelDoctors.Controls.Add(this.button5);
+            this.panelDoctors.Controls.Add(this.button4);
+            this.panelDoctors.Controls.Add(this.button3);
+            this.panelDoctors.Controls.Add(this.button1);
+            this.panelDoctors.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDoctors.Location = new System.Drawing.Point(0, 108);
+            this.panelDoctors.Name = "panelDoctors";
+            this.panelDoctors.Size = new System.Drawing.Size(200, 150);
+            this.panelDoctors.TabIndex = 1;
             // 
             // button3
             // 
@@ -197,7 +197,7 @@
             this.button5.Location = new System.Drawing.Point(0, 111);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(200, 37);
+            this.button5.Size = new System.Drawing.Size(200, 39);
             this.button5.TabIndex = 25;
             this.button5.Text = "button5";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -219,18 +219,18 @@
             this.btnDoctors.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDoctors.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panelPatients
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(129)))), ((int)(((byte)(174)))));
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 294);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 150);
-            this.panel1.TabIndex = 25;
+            this.panelPatients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(129)))), ((int)(((byte)(174)))));
+            this.panelPatients.Controls.Add(this.button6);
+            this.panelPatients.Controls.Add(this.button7);
+            this.panelPatients.Controls.Add(this.button8);
+            this.panelPatients.Controls.Add(this.button9);
+            this.panelPatients.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelPatients.Location = new System.Drawing.Point(0, 294);
+            this.panelPatients.Name = "panelPatients";
+            this.panelPatients.Size = new System.Drawing.Size(200, 150);
+            this.panelPatients.TabIndex = 25;
             // 
             // button6
             // 
@@ -242,7 +242,7 @@
             this.button6.Location = new System.Drawing.Point(0, 111);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(200, 37);
+            this.button6.Size = new System.Drawing.Size(200, 39);
             this.button6.TabIndex = 25;
             this.button6.Text = "button6";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -334,16 +334,16 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Appointment";
             // 
-            // panel2
+            // panelSettings
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(129)))), ((int)(((byte)(174)))));
-            this.panel2.Controls.Add(this.button13);
-            this.panel2.Controls.Add(this.button14);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 480);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 76);
-            this.panel2.TabIndex = 27;
+            this.panelSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(129)))), ((int)(((byte)(174)))));
+            this.panelSettings.Controls.Add(this.button13);
+            this.panelSettings.Controls.Add(this.button14);
+            this.panelSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSettings.Location = new System.Drawing.Point(0, 480);
+            this.panelSettings.Name = "panelSettings";
+            this.panelSettings.Size = new System.Drawing.Size(200, 76);
+            this.panelSettings.TabIndex = 27;
             // 
             // button13
             // 
@@ -355,7 +355,7 @@
             this.button13.Location = new System.Drawing.Point(0, 37);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(200, 37);
+            this.button13.Size = new System.Drawing.Size(200, 36);
             this.button13.TabIndex = 23;
             this.button13.Text = "button13";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -440,9 +440,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.panLogo.ResumeLayout(false);
             this.panLogo.PerformLayout();
-            this.panMediaSubMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.panelDoctors.ResumeLayout(false);
+            this.panelPatients.ResumeLayout(false);
+            this.panelSettings.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBtnLogOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnAccount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnHelp)).EndInit();
@@ -454,7 +454,7 @@
 
         private System.Windows.Forms.Panel panSideMenu;
         private System.Windows.Forms.PictureBox btnExit;
-        private System.Windows.Forms.Panel panMediaSubMenu;
+        private System.Windows.Forms.Panel panelDoctors;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
@@ -462,14 +462,14 @@
         private System.Windows.Forms.Button btnMedia;
         private System.Windows.Forms.Panel panLogo;
         private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelPatients;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btnDoctors;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelSettings;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label2;

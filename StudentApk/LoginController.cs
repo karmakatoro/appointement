@@ -10,8 +10,9 @@ namespace StudentApk
 {
     class LoginController
     {
-        public static void login(LoginModel loginmodel)
+        public int login(LoginModel loginmodel)
         {
+            int value = 0;
             try
             {
                 string query = "SELECT username,password FROM t_users WHERE username = @username AND password = @password";
@@ -23,23 +24,25 @@ namespace StudentApk
 
                 MySqlDataReader data;
                 data = cmd.ExecuteReader();
-
+                
                 if (data.Read())
                 {
-                    Login login = new Login();
-                    login.Hide();
-                    new Main(loginmodel.Username).Show();
+                    value = 1;
                 }
                 else
                 {
                     MessageBox.Show("The user does not exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    value = 0;
                 }
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("An error occured\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
 
-        }
+                MessageBox.Show("MySql error\n"+ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
+                
+            return value;
+            }
     }
 }

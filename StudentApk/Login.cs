@@ -31,7 +31,20 @@ namespace StudentApk
         {
             string username = textUsername.Text.Trim();
             string password = textPassword.Text.Trim();
+            LoginModel loginmodel = new LoginModel(username,password);
+            LoginController logincontroller = new LoginController();
+            int check = logincontroller.login(loginmodel);
 
+            if (check == 1)
+            {
+                this.Hide();
+                new Main(username).Show();
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

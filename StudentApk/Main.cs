@@ -20,7 +20,10 @@ namespace StudentApk
             this.Text = "Doctor Appointement - @" +user_active;
             textAciveUserName.Text = "@" + user_active;
         }
-
+        public void customizeDesign()
+        {
+            panMediaSubMenu.Visible = false;
+        }
         private void Main_Load(object sender, EventArgs e)
         {
 

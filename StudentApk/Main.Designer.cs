@@ -67,6 +67,7 @@
             // 
             // panSideMenu
             // 
+            this.panSideMenu.AutoScroll = true;
             this.panSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
             this.panSideMenu.Controls.Add(this.picBtnHelp);
             this.panSideMenu.Controls.Add(this.picBtnLogOut);
@@ -89,7 +90,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(148, 566);
+            this.btnExit.Location = new System.Drawing.Point(161, 566);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(36, 33);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -327,7 +328,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(99, 19);
+            this.label2.Location = new System.Drawing.Point(98, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 8;
@@ -381,7 +382,7 @@
             this.picBtnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
             this.picBtnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBtnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("picBtnLogOut.Image")));
-            this.picBtnLogOut.Location = new System.Drawing.Point(61, 566);
+            this.picBtnLogOut.Location = new System.Drawing.Point(77, 566);
             this.picBtnLogOut.Name = "picBtnLogOut";
             this.picBtnLogOut.Size = new System.Drawing.Size(36, 33);
             this.picBtnLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -393,9 +394,9 @@
             this.picBtnAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
             this.picBtnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBtnAccount.Image = ((System.Drawing.Image)(resources.GetObject("picBtnAccount.Image")));
-            this.picBtnAccount.Location = new System.Drawing.Point(12, 44);
+            this.picBtnAccount.Location = new System.Drawing.Point(12, 49);
             this.picBtnAccount.Name = "picBtnAccount";
-            this.picBtnAccount.Size = new System.Drawing.Size(31, 26);
+            this.picBtnAccount.Size = new System.Drawing.Size(31, 21);
             this.picBtnAccount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBtnAccount.TabIndex = 29;
             this.picBtnAccount.TabStop = false;
@@ -405,7 +406,7 @@
             this.picBtnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
             this.picBtnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBtnHelp.Image = ((System.Drawing.Image)(resources.GetObject("picBtnHelp.Image")));
-            this.picBtnHelp.Location = new System.Drawing.Point(103, 566);
+            this.picBtnHelp.Location = new System.Drawing.Point(119, 566);
             this.picBtnHelp.Name = "picBtnHelp";
             this.picBtnHelp.Size = new System.Drawing.Size(36, 33);
             this.picBtnHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -427,6 +428,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1016, 602);
             this.Controls.Add(this.panSideMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

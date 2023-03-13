@@ -18,6 +18,7 @@ namespace StudentApk
             InitializeComponent();
             this.user_active = user_active;
             this.Text = "Doctor Appointement - @" +user_active;
+            textAciveUserName.Text = "@" + user_active;
         }
 
         private void Main_Load(object sender, EventArgs e)

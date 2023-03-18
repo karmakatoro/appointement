@@ -53,6 +53,21 @@ namespace StudentApk
                 panel.Visible = false;
             }
         }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if(activeForm !=null){
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panChild.Controls.Add(childForm);
+            panChild.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         private void Main_Load(object sender, EventArgs e)
         {
 

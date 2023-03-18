@@ -54,8 +54,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panOther = new System.Windows.Forms.Panel();
+            this.panChild = new System.Windows.Forms.Panel();
             this.panSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -441,24 +441,24 @@
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // panel1
+            // panOther
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(171)))), ((int)(((byte)(201)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(200, 502);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(816, 100);
-            this.panel1.TabIndex = 1;
+            this.panOther.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(171)))), ((int)(((byte)(201)))));
+            this.panOther.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panOther.Location = new System.Drawing.Point(200, 502);
+            this.panOther.Name = "panOther";
+            this.panOther.Size = new System.Drawing.Size(816, 100);
+            this.panOther.TabIndex = 1;
             // 
-            // panel2
+            // panChild
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(171)))), ((int)(((byte)(201)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(219)))));
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(816, 502);
-            this.panel2.TabIndex = 2;
+            this.panChild.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(219)))));
+            this.panChild.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panChild.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(219)))));
+            this.panChild.Location = new System.Drawing.Point(200, 0);
+            this.panChild.Name = "panChild";
+            this.panChild.Size = new System.Drawing.Size(816, 502);
+            this.panChild.TabIndex = 2;
             // 
             // Main
             // 
@@ -466,8 +466,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1016, 602);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panChild);
+            this.Controls.Add(this.panOther);
             this.Controls.Add(this.panSideMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
@@ -516,7 +516,7 @@
         private System.Windows.Forms.PictureBox picBtnLogOut;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panOther;
+        private System.Windows.Forms.Panel panChild;
     }
 }

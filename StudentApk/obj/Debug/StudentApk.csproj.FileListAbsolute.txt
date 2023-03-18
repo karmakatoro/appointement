@@ -35,3 +35,4 @@ C:\Users\karma03\Documents\Visual Studio 2015\Projects\StudentApk\StudentApk\bin
 C:\Users\karma03\Documents\Visual Studio 2015\Projects\StudentApk\StudentApk\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
 C:\Users\karma03\Documents\Visual Studio 2015\Projects\StudentApk\StudentApk\bin\Debug\MySql.Data.dll
 C:\Users\karma03\Documents\Visual Studio 2015\Projects\StudentApk\StudentApk\obj\Debug\StudentApk.Main.resources
+C:\Users\karma03\documents\visual studio 2015\Projects\StudentApk\StudentApk\obj\Debug\StudentApk.Activities.resources

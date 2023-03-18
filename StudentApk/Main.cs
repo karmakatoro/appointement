@@ -89,6 +89,7 @@ namespace StudentApk
 
         private void btnActiveDoctors_Click(object sender, EventArgs e)
         {
+            openChildForm(new Activities());
             hideSubMenu();
         }
 
@@ -150,6 +151,16 @@ namespace StudentApk
         private void btnSettings2_Click_1(object sender, EventArgs e)
         {
             hideSubMenu();
+        }
+
+        private void panOther_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            activeForm.Close();
         }
     }
 }

@@ -30,10 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panSideMenu = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picBtnHelp = new System.Windows.Forms.PictureBox();
-            this.picBtnLogOut = new System.Windows.Forms.PictureBox();
             this.panelSettings = new System.Windows.Forms.Panel();
             this.btnSettings2 = new System.Windows.Forms.Button();
             this.btnSettings1 = new System.Windows.Forms.Button();
@@ -53,19 +49,26 @@
             this.panLogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.PictureBox();
             this.panOther = new System.Windows.Forms.Panel();
             this.panChild = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picBtnHelp = new System.Windows.Forms.PictureBox();
+            this.picBtnLogOut = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panSideMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnHelp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnLogOut)).BeginInit();
             this.panelSettings.SuspendLayout();
             this.panelPatients.SuspendLayout();
             this.panelDoctors.SuspendLayout();
             this.panLogo.SuspendLayout();
+            this.panChild.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnHelp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panSideMenu
@@ -89,54 +92,6 @@
             this.panSideMenu.Name = "panSideMenu";
             this.panSideMenu.Size = new System.Drawing.Size(200, 602);
             this.panSideMenu.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(9, 566);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 566);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
-            // 
-            // picBtnHelp
-            // 
-            this.picBtnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
-            this.picBtnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnHelp.Image = ((System.Drawing.Image)(resources.GetObject("picBtnHelp.Image")));
-            this.picBtnHelp.Location = new System.Drawing.Point(131, 566);
-            this.picBtnHelp.Name = "picBtnHelp";
-            this.picBtnHelp.Size = new System.Drawing.Size(36, 33);
-            this.picBtnHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnHelp.TabIndex = 30;
-            this.picBtnHelp.TabStop = false;
-            // 
-            // picBtnLogOut
-            // 
-            this.picBtnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
-            this.picBtnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBtnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("picBtnLogOut.Image")));
-            this.picBtnLogOut.Location = new System.Drawing.Point(89, 566);
-            this.picBtnLogOut.Name = "picBtnLogOut";
-            this.picBtnLogOut.Size = new System.Drawing.Size(36, 33);
-            this.picBtnLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBtnLogOut.TabIndex = 28;
-            this.picBtnLogOut.TabStop = false;
             // 
             // panelSettings
             // 
@@ -428,6 +383,73 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "DoctoR";
             // 
+            // panOther
+            // 
+            this.panOther.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(171)))), ((int)(((byte)(201)))));
+            this.panOther.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panOther.Location = new System.Drawing.Point(200, 502);
+            this.panOther.Name = "panOther";
+            this.panOther.Size = new System.Drawing.Size(816, 100);
+            this.panOther.TabIndex = 1;
+            this.panOther.Paint += new System.Windows.Forms.PaintEventHandler(this.panOther_Paint);
+            // 
+            // panChild
+            // 
+            this.panChild.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(219)))));
+            this.panChild.Controls.Add(this.pictureBox3);
+            this.panChild.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panChild.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(219)))));
+            this.panChild.Location = new System.Drawing.Point(200, 0);
+            this.panChild.Name = "panChild";
+            this.panChild.Size = new System.Drawing.Size(816, 502);
+            this.panChild.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::StudentApk.Properties.Resources._11;
+            this.pictureBox3.Location = new System.Drawing.Point(294, 86);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(270, 271);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(47, 566);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picBtnHelp
+            // 
+            this.picBtnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
+            this.picBtnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnHelp.Image = ((System.Drawing.Image)(resources.GetObject("picBtnHelp.Image")));
+            this.picBtnHelp.Location = new System.Drawing.Point(131, 566);
+            this.picBtnHelp.Name = "picBtnHelp";
+            this.picBtnHelp.Size = new System.Drawing.Size(36, 33);
+            this.picBtnHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnHelp.TabIndex = 30;
+            this.picBtnHelp.TabStop = false;
+            // 
+            // picBtnLogOut
+            // 
+            this.picBtnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
+            this.picBtnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBtnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("picBtnLogOut.Image")));
+            this.picBtnLogOut.Location = new System.Drawing.Point(89, 566);
+            this.picBtnLogOut.Name = "picBtnLogOut";
+            this.picBtnLogOut.Size = new System.Drawing.Size(36, 33);
+            this.picBtnLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBtnLogOut.TabIndex = 28;
+            this.picBtnLogOut.TabStop = false;
+            // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
@@ -441,24 +463,18 @@
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // panOther
+            // pictureBox2
             // 
-            this.panOther.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(171)))), ((int)(((byte)(201)))));
-            this.panOther.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panOther.Location = new System.Drawing.Point(200, 502);
-            this.panOther.Name = "panOther";
-            this.panOther.Size = new System.Drawing.Size(816, 100);
-            this.panOther.TabIndex = 1;
-            // 
-            // panChild
-            // 
-            this.panChild.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(219)))));
-            this.panChild.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panChild.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(219)))));
-            this.panChild.Location = new System.Drawing.Point(200, 0);
-            this.panChild.Name = "panChild";
-            this.panChild.Size = new System.Drawing.Size(816, 502);
-            this.panChild.TabIndex = 2;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(67)))), ((int)(((byte)(134)))));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(9, 566);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Main
             // 
@@ -475,16 +491,18 @@
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panSideMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnHelp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnLogOut)).EndInit();
             this.panelSettings.ResumeLayout(false);
             this.panelPatients.ResumeLayout(false);
             this.panelDoctors.ResumeLayout(false);
             this.panLogo.ResumeLayout(false);
             this.panLogo.PerformLayout();
+            this.panChild.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnHelp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnLogOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -514,9 +532,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picBtnHelp;
         private System.Windows.Forms.PictureBox picBtnLogOut;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panOther;
         private System.Windows.Forms.Panel panChild;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
